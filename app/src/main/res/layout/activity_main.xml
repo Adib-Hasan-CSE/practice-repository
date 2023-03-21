@@ -5,62 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="@color/black"
     >
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/diamond"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:src="@drawable/diamond"/>
+    </LinearLayout>
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Your BMI Helper"
-        android:textColor="@color/purple_700"
-        android:textSize="40sp"
-        android:layout_marginTop="80dp"/>
-
-    <EditText
-        android:id="@+id/input1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your weight in kg"
-        android:layout_marginTop="70dp"/>
-
-    <EditText
-        android:id="@+id/input2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter your height in meters"
-        />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Calculate"
-        android:textAlignment="center"
-        android:layout_gravity="center"
-        />
-
+        android:id="@+id/diamond"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:text="I am Rich"
+        android:textColor="@color/purple_200"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.776" />
     <TextView
-        android:id="@+id/output1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_gravity="center"
-        android:textAlignment="center"
-        android:text="Result Will Appear Here"
-        android:layout_marginBottom="80dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:background="#34e1eb"
-        android:textColor="@color/black"
-        android:textSize="40sp" />
-
-
-</LinearLayout>
-
-
-
+        android:layout_width="237dp"
+        android:layout_height="101dp"
+        android:text="I Can do anything"
+        android:textColor="@color/purple_200"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.968" />
 </androidx.constraintlayout.widget.ConstraintLayout>
