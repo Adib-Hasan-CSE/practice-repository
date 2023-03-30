@@ -6,7 +6,7 @@
     android:layout_gravity="center"
     android:orientation="vertical"
     android:background="@color/teal_200"
-    tools:context=".Class17.Fragments.HomeFragment">
+    tools:context=".Class18.Fragments.HomeFragment">
 
 
     <Button

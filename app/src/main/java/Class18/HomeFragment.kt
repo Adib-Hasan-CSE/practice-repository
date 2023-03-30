@@ -1,4 +1,4 @@
-package com.example.practiceapp.Class17.Fragments
+package com.example.practiceapp.Class18.Fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
