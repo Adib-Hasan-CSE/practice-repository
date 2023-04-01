@@ -3,6 +3,8 @@ package com.example.practiceapp.Class18.Fragments
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -46,6 +48,35 @@ class MainActivityclass18 : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.top_menu,menu)
 
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.sendMenu ->{
+                Toast.makeText(this, "sendMenu Clicked", Toast.LENGTH_SHORT).show()
+            }
+            R.id.galleryMenu ->{
+                Toast.makeText(this, "galleryMenu Clicked", Toast.LENGTH_SHORT).show()
+            }
+            R.id.callMenu ->{
+                Toast.makeText(this, "callMenu Clicked", Toast.LENGTH_SHORT).show()
+            }
+            R.id.CalculatorMenu ->{
+                navController.navigate(R.id.calculatorFragment)
+
+                Toast.makeText(this, "CalculatorMenu Clicked", Toast.LENGTH_SHORT).show()
+            }
+            R.id.exitMenu ->{
+                finish()
+                Toast.makeText(this, "exitMenu Clicked", Toast.LENGTH_SHORT).show()
+            }
+
+        }
+        return super.onOptionsItemSelected(item)
+    }
 
     }
